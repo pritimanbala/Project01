@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <header>
+    <img src="logo.svg" alt="not-available">
+      <ul class="navLinks">
+        <li class="links">Home</li>
+        <li class="links">New</li>
+        <li class="links">Popular</li>
+        <li class="links">Trending</li>
+        <li class="links">Categories</li>
+        <li id="link"><img src="icon-menu.svg" alt="not-available" onclick="showBar()"></li>
+      </ul>
+      <ul class="sidebar">
+        <li><img src="icon-menu-close.svg" alt="not-available" onclick="hideBar()"></li>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </header>
+    <div id="lArea" onclick="hideBar()"></div>
+
+
+
+
+  <div class="middle">
+    <div class="left">
+      <img src="image-web-3-desktop.jpg" alt="not-available" id="middleImage">
+      <div class="down">
+        <div class="dRight">
+          The Bright Future of Web 3.0?
+        </div>
+        <div class="dLeft">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+          of the people.
+          But is it really fulfilling its promise?
+          <br>
+          <button>Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h1>New</h1>
+      <p class="rightText">
+      <h2>Hydrogen VS Electric Cars</h2>
+      Will hydrogen-fueled cars ever catch up to EVs?
+      </p>
+      <p class="rightText">
+      <h2>The Downsides of AI Artistry</h2>
+      What are the possible adverse effects of on-demand AI image generation?
+      </p>
+      <p class="rightText">
+      <h2>Is VC Funding Drying Up?</h2>
+      Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="low">
+    <div class="lowP">
+      <img src="image-retro-pcs.jpg" alt="" class="iimage">
+      <div class="inside">
+        <h1 class="num">01</h1>
+        <h3>Reviving Retro PCs</h3>
+        What happens when old PCs are given modern upgrades?
+      </div>
+    </div>
+    <div class="lowP">
+      <img src="image-top-laptops.jpg" alt="" class="iimage">
+      <div class="inside">
+        <h1 class="num">02</h1>
+        <h3>Top 10 Laptops of 2022</h3>
+        Our best picks for various needs and budgets.
+      </div>
+    </div>
+    <div class="lowP">
+      <img src="image-gaming-growth.jpg" alt="" class="iimage">
+      <div class="inside">
+        <h1 class="num">03</h1>
+        <h3>Growth of Gaming</h3>
+        How the pandemic has sparked fresh opportunities.
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Pritiman Bala</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
